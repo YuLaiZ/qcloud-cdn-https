@@ -55,6 +55,8 @@ file.private.cert=/etc/letsencrypt/live/yulaiz.com/privkey.pem
 #openssl.linux=openssl
 ```
 
+其中腾讯云账号的API的 SecretId 和 SecretKey 需要在 [腾讯云控制台-云API密钥](https://console.cloud.tencent.com/capi) 上申请，需要注意的是，腾讯云的CDN API不支持子账户操作，只能使用主账号的 SecretId 和 SecretKey 了。
+
 将 ``qcloud-cdn-https-1.0.jar`` 与 ``config.properties`` 上传至服务器
 
 ```shell
