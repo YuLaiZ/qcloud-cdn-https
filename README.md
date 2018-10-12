@@ -90,9 +90,16 @@ echo "-----qcloud cdn push begin-----"
 java -jar /usr/update_push_cert/qcloud-cdn-https-1.0.jar
 echo "-----qcloud cdn push end-----"
 
+
+#echo "-----nginx reload begin-----"
+#仅reload本机测试失败，必须先stop再start
+#/usr/local/nginx/sbin/nginx -s reload
+#echo "-----nginx reload end-----"
 echo "-----nginx reload begin-----"
 #nginx路径
-/usr/local/nginx/sbin/nginx -s reload
+/usr/local/nginx/sbin/nginx -s stop
+#nginx路径, nginx.conf路径
+/usr/local/nginx/sbin/nginx -c /usr/local/nginx/conf/nginx.conf
 echo "-----nginx reload end-----"
 #log日志在配置crontab定时任务的是会指定
 echo "-----you can see log in /usr/update_push_cert/logs/upc.log-----"
