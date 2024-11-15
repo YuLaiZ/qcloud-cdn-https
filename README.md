@@ -3,7 +3,7 @@
 
 #	使用限制
 
-本Java程序是用于将Certbot生成的PKCS8证书，转换为腾讯云需要的PKCS1证书，需要自行安装Certbot并配置，安装教程可参考 [使用 Certbot 为服务器安装免费的 https 证书](https://yulaiz.com/archives/2018/347)
+本Java程序是用于将Certbot生成的PKCS8证书，转换为腾讯云需要的PKCS1证书，需要自行安装Certbot并配置，安装教程可参考 [使用 Certbot 为服务器安装免费的 https 证书](https://yulaiz.com/certbot-https-qcloud-cdn-crontab/)
 
 #	使用的框架与资源
 
